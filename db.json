@@ -1,0 +1,779 @@
+{
+  "posts": [
+    {
+      "id": "be14",
+      "CityName": "chennai",
+      "Technologies": "angular",
+      "CompanyName": "Ltimindtree",
+      "Experience": "2",
+      "immediatejoiner": "yes"
+    },
+    {
+      "id": "6e4a",
+      "CityName": "chennai",
+      "Technologies": "angular",
+      "CompanyName": "Ltimindtree",
+      "Experience": "2",
+      "immediatejoiner": "yes"
+    },
+    {
+      "id": "6b35",
+      "CityName": "chennai",
+      "Technologies": "angular",
+      "CompanyName": "Ltimindtree",
+      "Experience": "2",
+      "immediatejoiner": "yes"
+    },
+    {
+      "id": "589a",
+      "CityName": "hyderabad",
+      "Technologies": "angular ",
+      "CompanyName": "LTIMindtree",
+      "Experience": "2",
+      "immediatejoiner": "yes"
+    },
+    {
+      "id": "ddea",
+      "CityName": "chennai",
+      "Technologies": "angular",
+      "CompanyName": "Ltimindtree",
+      "Experience": "2",
+      "immediatejoiner": "yes"
+    },
+    {
+      "id": "7c75",
+      "CityName": "hyderabad",
+      "Technologies": "angular ",
+      "CompanyName": "LTIMindtree",
+      "Experience": "2",
+      "immediatejoiner": "yes"
+    },
+    {
+      "id": "514a",
+      "CityName": "chennai",
+      "Technologies": "angular",
+      "CompanyName": "Ltimindtree",
+      "Experience": "2",
+      "immediatejoiner": "yes"
+    },
+    {
+      "id": "3e71",
+      "CityName": "chennai",
+      "Technologies": "angular",
+      "CompanyName": "Ltimindtree",
+      "Experience": "2",
+      "immediatejoiner": "yes"
+    },
+    {
+      "id": "ff77",
+      "CityName": "chennai",
+      "Technologies": "angular",
+      "CompanyName": "Ltimindtree",
+      "Experience": "2",
+      "immediatejoiner": "yes"
+    },
+    {
+      "id": "636b",
+      "CityName": "chennai",
+      "Technologies": "angular",
+      "CompanyName": "Ltimindtree",
+      "Experience": "2",
+      "immediatejoiner": "yes"
+    },
+    {
+      "id": "50e9",
+      "CityName": "nodia",
+      "Technologies": "angular+java+sql",
+      "CompanyName": "accenture",
+      "Experience": "3",
+      "immediatejoiner": "yes"
+    },
+    {
+      "id": "45ce",
+      "CityName": "hhyderabad",
+      "Technologies": "sql ",
+      "CompanyName": "snaptics",
+      "Experience": "6",
+      "immediatejoiner": "yes"
+    }
+  ],
+  "posts1": [
+    {
+      "id": "581a",
+      "CityName": "hyderabad",
+      "Pizza": "kolamsettymahalakshmi58@gmail.com",
+      "Rolls": "angular",
+      "Cakes": "java script",
+      "Shakes": "nhu"
+    }
+  ],
+  "signupUsers": [
+    {
+      "fullname": "Sita",
+      "email": "sita@gmail.com",
+      "password": "abc@06",
+      "mobile": "1234567890",
+      "id": "1"
+    },
+    {
+      "fullname": "Padma",
+      "email": "padam@gmail.com",
+      "password": "abc@06",
+      "mobile": "9676105530",
+      "id": "2"
+    },
+    {
+      "fullname": "Aravind",
+      "email": "aravind@gmail.com",
+      "password": "abc@06",
+      "mobile": "9177948151",
+      "id": "3"
+    },
+    {
+      "fullname": "Ram",
+      "email": "ram@gmail.com",
+      "password": "abc12",
+      "mobile": "923045613",
+      "id": "4"
+    },
+    {
+      "fullname": "Akhila",
+      "email": "akhila@gmail.com",
+      "password": "Abc@06",
+      "mobile": "01234567890",
+      "id": "5"
+    },
+    {
+      "fullname": "Akhila Varkolu",
+      "email": "akhilavarkolu2000@gmail.com",
+      "password": "Akhila@06",
+      "mobile": "8187050479",
+      "id": "6"
+    },
+    {
+      "fullname": "Srivalli V",
+      "email": "srivalli@gmail.com",
+      "password": "Srivalli@06",
+      "mobile": "8187050479",
+      "id": "7"
+    },
+    {
+      "fullname": "Aravind",
+      "email": "aravind06@gmail.com",
+      "password": "Aravind@06",
+      "mobile": "7095600816",
+      "id": "8"
+    },
+    {
+      "fullname": "Akhila V",
+      "email": "akhilavarkolu@gmail.com",
+      "password": "Akhila@06",
+      "mobile": "1234567890",
+      "id": "9"
+    },
+    {
+      "fullname": "Sree",
+      "email": "srivalli@gmail.com",
+      "password": "Sree@2000",
+      "mobile": "1111111111",
+      "id": "10"
+    },
+    {
+      "fullname": "Yamini",
+      "email": "yamini@gmail.com",
+      "password": "Yamini@06",
+      "mobile": "7702921686",
+      "id": "11"
+    },
+    {
+      "fullname": "Yamini",
+      "email": "yamini@gmail.com",
+      "password": "Yamini@06",
+      "mobile": "123456789",
+      "id": "12"
+    },
+    {
+      "fullname": "Yamini Kommineni",
+      "email": "yamini06@gmail.com",
+      "password": "Yamini@06",
+      "mobile": "7702921686",
+      "id": "13"
+    },
+    {
+      "id": "635e",
+      "fullname": "mahaLakshmi",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234",
+      "mobile": "7702667389"
+    },
+    {
+      "id": "6e7f",
+      "fullname": "mahaLakshmi",
+      "email": "kolamsettymahalakshmi0558@gmail.com",
+      "password": "MAhi0987",
+      "mobile": "7702667389"
+    },
+    {
+      "id": "124b",
+      "fullname": "Kolamsetty MahaLakshmi",
+      "email": "kolamsettymahalakshmi12@gmail.com",
+      "password": "Maha@5678",
+      "mobile": "8885476441"
+    },
+    {
+      "id": "8692",
+      "fullname": "Kolamsetty Maha Lakshmi",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Lakshmi@123",
+      "mobile": "7702667389",
+      "resume": "C:\\fakepath\\Mahi_Resume (1).pdf",
+      "lastworkingday": ""
+    }
+  ],
+  "applycompanies": [
+    {
+      "CustomerName": "Nagababu",
+      "email": "nagababuvnb@gmail.com",
+      "phone": "8919588165",
+      "CityName": "Hyderabad",
+      "HotelName": "Chicken ",
+      "id": "5"
+    }
+  ],
+  "applytechnologiess": [
+    {
+      "CustomerName": "Akhila",
+      "email": "akhila@gmail.com",
+      "phone": "01234567890",
+      "CityName": "Mumbai",
+      "HotelName": "Air Asia India",
+      "id": "1"
+    },
+    {
+      "id": "e9d9",
+      "CustomerName": "mahaLakshmi",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "phone": "7702667389",
+      "CityName": "Hyderabd",
+      "HotelName": "Air India | Price:6k"
+    }
+  ],
+  "applythejob": [
+    {
+      "id": "2b64",
+      "CustomerName": "mahaLakshmi",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "phone": "7702667389",
+      "Technologies": "angular ",
+      "CityName": "hyderabad",
+      "CompanyName": "Ltimindtree",
+      "Experience": "2",
+      "immediatejoiner": "yes",
+      "Location": ""
+    },
+    {
+      "id": "7c3b",
+      "CustomerName": "mahaLakshmi",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "phone": "7702667389",
+      "Technologies": "Node.js",
+      "CityName": "pune",
+      "CompanyName": "accenture",
+      "Experience": "2",
+      "immediatejoiner": "yes",
+      "Location": ""
+    },
+    {
+      "id": "8959",
+      "CustomerName": "mahaLakshmi",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "phone": "7702667389",
+      "Technologies": "java",
+      "CityName": "nodia",
+      "CompanyName": "cognizant",
+      "Experience": "2",
+      "immediatejoiner": "yes",
+      "Location": ""
+    },
+    {
+      "id": "de41",
+      "CustomerName": "mahaLakshmi",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "phone": "7702667389",
+      "Technologies": "angular+java",
+      "CityName": "bangalore",
+      "CompanyName": "cognizant",
+      "Experience": "2",
+      "immediatejoiner": "yes",
+      "Location": ""
+    },
+    {
+      "id": "4c73",
+      "CustomerName": "mahaLakshmi",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "phone": "7702667389",
+      "Technologies": "angular and node.js",
+      "CityName": "bangalore",
+      "CompanyName": "Ltimindtree",
+      "Experience": "2",
+      "immediatejoiner": "yes",
+      "Location": ""
+    },
+    {
+      "id": "5e9f",
+      "CustomerName": "mahaLakshmi",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "phone": "7702667389",
+      "Technologies": "java",
+      "CityName": "bangalore",
+      "CompanyName": "cognizant",
+      "Experience": "2",
+      "immediatejoiner": "yes",
+      "Location": ""
+    },
+    {
+      "id": "5b4d",
+      "CustomerName": "mahaLakshmi",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "phone": "7702667389",
+      "Technologies": "python",
+      "CityName": "bangalore",
+      "CompanyName": "accenture",
+      "Experience": "2",
+      "immediatejoiner": "yes",
+      "Location": ""
+    },
+    {
+      "id": "b742",
+      "CustomerName": "mahaLakshmi",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "phone": "7702667389",
+      "Technologies": "",
+      "CityName": "pune",
+      "CompanyName": "accenture",
+      "Experience": "2",
+      "immediatejoiner": "yes",
+      "Location": ""
+    },
+    {
+      "id": "860a",
+      "CustomerName": "mahaLakshmi",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "phone": "7702667389",
+      "Technologies": "angular ",
+      "CityName": "hyderabad",
+      "CompanyName": "LTIMindtree"
+    },
+    {
+      "id": "dd2f",
+      "CustomerName": "mahaLakshmi",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "phone": "7702667389",
+      "Technologies": "angular ",
+      "CityName": "hyderabad",
+      "CompanyName": "LTIMindtree",
+      "Experience": "2",
+      "immediatejoiner": "yes"
+    },
+    {
+      "id": "d5ef",
+      "CustomerName": "mahaLakshmi",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "phone": "7702667389",
+      "Technologies": "angular",
+      "CityName": "chennai",
+      "CompanyName": "Ltimindtree",
+      "Experience": "3"
+    },
+    {
+      "id": "5b84",
+      "CustomerName": "mahaLakshmi",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "phone": "7702667389",
+      "Technologies": "angular ",
+      "CityName": "hyderabad",
+      "CompanyName": "LTIMindtree",
+      "Experience": "2",
+      "immediatejoiner": "yes"
+    },
+    {
+      "id": "1984",
+      "CustomerName": "mahaLakshmi",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "phone": "7702667389",
+      "Technologies": "angular ",
+      "CityName": "hyderabad",
+      "CompanyName": "LTIMindtree",
+      "Experience": "2",
+      "immediatejoiner": "yes"
+    },
+    {
+      "id": "5fb0",
+      "CustomerName": "mahaLakshmi",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "phone": "7702667389",
+      "Technologies": "angular ",
+      "CityName": "hyderabad",
+      "CompanyName": "LTIMindtree",
+      "Experience": "2",
+      "immediatejoiner": "yes"
+    }
+  ],
+  "login": [
+    {
+      "id": "2bf3",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "b93e",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "69c9",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "53fa",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "1029",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "6030",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "a257",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "0e5b",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "06e5",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "a1a7",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "7de0",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "a108",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "f241",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "2a47",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "eaff",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "6189",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "82f4",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "f535",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "f70c",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "9c38",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "5f60",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "b331",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "0800",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "edf8",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "5d74",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "0373",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "d8b9",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "59d3",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "a1aa",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "0b18",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "35e4",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "2b54",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "051d",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "db72",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "5950",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "d950",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "c253",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "5711",
+      "email": "kolamsettymahalakshmi12@gmail.com",
+      "password": "Maha@5678"
+    },
+    {
+      "id": "111c",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "074d",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "73ae",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "8957",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "3698",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "4bae",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "10e9",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "08c4",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "ec97",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "1fd9",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "6144",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@2345"
+    },
+    {
+      "id": "1d3a",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@2345"
+    },
+    {
+      "id": "e8cf",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@2345"
+    },
+    {
+      "id": "d25a",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "137f",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "534d",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "88cc",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "a4a6",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "6320",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "1af1",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "5921",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "46e9",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "27af",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "6937",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Lakshmi@123"
+    },
+    {
+      "id": "01e3",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "961f",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "a1d5",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "3f9b",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "4921",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "455b",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "0723",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "d8c5",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    },
+    {
+      "id": "10ae",
+      "email": "kolamsettymahalakshmi58@gmail.com",
+      "password": "Maha@1234"
+    }
+  ]
+}

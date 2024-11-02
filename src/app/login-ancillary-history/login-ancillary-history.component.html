@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Login For admin</h1>
+                    <h6>Please Enter Email & Password !!</h6>
+                </div>
+                    <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"placeholder="E-mail" ngModel #empId=ngModel>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" name="password" class="form-control" id="exampleInputPassword1"placeholder="password" ngModel #empId=ngModel>
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2">Login</button>
+                      </form>
+                      <a style="color:aliceblue;margin: top 10px;" href="/signup">New User? Click to SignUp</a>
+                      <a style="color:aliceblue;margin: top 10px;" href="/login">Alreday User? Click to Login </a>
+            </div>
+        </div>
+    </div>
+
+</div>

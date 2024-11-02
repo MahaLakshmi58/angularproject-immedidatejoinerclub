@@ -1,0 +1,50 @@
+<div class="container-fluid mb-3" align="center">
+    <h4 style="color: rgb(203, 162, 66);">Select The Place</h4>
+</div>
+
+<select class="form-select" multiple aria-label="multiple select example" [(ngModel)]="selected">
+
+    <option *ngFor="let x of cityData">{{x.CityName}}</option>
+</select>
+<br />
+<div class="container-fluid mb-3" align="center">
+    <h4 style="color: rgb(130, 66, 203);">Profile</h4>
+</div>
+
+
+<table class="table mt-2">
+    <thead>
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">Location</th>
+            <th scope="col">Technologies</th>
+            <th scope="col">Company Name</th>
+            <th scope="col">Experience</th>
+            <th scope="col">immediatejoiner</th>
+
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of cityData">
+            <ng-container *ngIf="row.CityName==selected">
+                <td>{{row.id}}
+                </td>
+                <td>{{row.CityName}}</td>
+                <td>{{row.Technologies}}</td>
+                <td>{{row.CompanyName}}</td>
+                <td>{{row.Experience}}</td>
+                <td>{{row.immediatejoiner}}</td>
+                <td>
+                    <button
+                        (click)="applythejob(row.Technologies, row.CompanyName, row.CityName, row.Experience, row.immediatejoiner)"
+                        type="button" class="btn btn-primary btn-sm">
+                        Apply
+                    </button>
+                </td>
+
+
+            </ng-container>
+        </tr>
+    </tbody>
+</table>

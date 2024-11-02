@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Login For admin</h1>
+                    <h6>Please Enter Email & Password !!</h6>
+                </div>
+                    <form [formGroup]="loginForm" (ngSubmit)="login()">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"placeholder="E-mail" >
+                          <span class="text-danger" *ngIf="loginForm.controls['email'].touched && loginForm.hasError('required')">*Email id is required</span>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" formControlName="password" class="form-control" id="exampleInputPassword1"placeholder="password" >
+                          <span class="text-danger" *ngIf="loginForm.controls['password'].touched && loginForm.hasError('required')">*password is required</span>
+                        </div>
+                        <button type="submit" [disabled]="!loginForm.valid" class="btn btn-primary mb-2">Login</button>
+                      </form>
+                      <a style="color:aliceblue;margin: top 10px;"routerLink="/signup">New User? Click to SignUp</a>
+                      <a style="color:aliceblue;margin: top 10px;" routerLink="/login">Alreday User? Click to Login </a>
+            </div>
+        </div>
+    </div>
+
+</div>

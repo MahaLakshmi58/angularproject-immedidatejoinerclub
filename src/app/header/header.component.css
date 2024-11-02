@@ -1,0 +1,51 @@
+body{
+    font-family: Calibri, sans-serif;
+    margin: 20;
+    /*background-image: url('https://th.bing.com/th?id=OIP.n9pn1mWIswucxNUjPtsu5AHaE5&w=307&h=203&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2');*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+header{
+    background: linear-gradient(180deg,rgb(33, 19, 184),rgb(211, 211, 211));
+    padding: 5px;
+    color: rgb(76, 25, 25);
+}
+nav{
+    background-color: rgb(169, 24, 89);
+    font-size: 20px;
+    align-items: center;
+    
+}
+nav a{
+    color: rgb(12, 11, 11);
+    text-decoration: none;
+    padding: 10px 25px;
+    display: inline-block;
+    font-size: 20px;
+}
+nav a:hover{
+    background-color: lightgray;
+    color: black;
+} 
+.dropdown{
+    padding: 10px 10px;
+    display: inline-block;
+}
+.active{
+    font-size:18px;
+    font-weight: bold;
+}
+.abc{
+color:brown;
+font-size: large;
+}
+.xyz{
+    color:rgb(177, 163, 175);
+    font-size: 5px;
+}
+.abcd{
+    color:rgb(172, 38, 107);
+    font-size: 50px;
+    font-family:'Times New Roman';
+}
