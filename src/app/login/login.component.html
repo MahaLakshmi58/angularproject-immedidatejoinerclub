@@ -21,9 +21,10 @@
                           <span class="text-danger" *ngIf="loginForm.controls['password'].touched && loginForm.hasError('required')">*Password is required</span>
                         </div>
                         <button type="submit" [disabled]="!loginForm.valid" click="login()" class="btn btn-primary mb-2">Login</button>
+                        <br />
                       </form>
-                      <a style="color:aliceblue;margin: top 10px;" routerLink="/signup">New User? Click to SignUp</a>
-                      <a style="color:aliceblue;margin: top 10px;" routerLink="/admin">Admin? Click to Login </a>
+                      <a style="color:rgb(33, 140, 233);margin: top 10px;" routerLink="/signup">New User? Click to SignUp</a>
+                      <a style="color:rgb(53, 144, 223);margin: top 10px;" routerLink="/admin">Admin? Click to Login </a>
             </div>
         </div>
     </div>

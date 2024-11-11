@@ -1,4 +1,4 @@
-<div class="container-fluid mb-3" align="center">
+<!-- <div class="container-fluid mb-3" align="center">
     <h4 style="color: rgb(203, 162, 66);">Select The Place</h4>
 </div>
 
@@ -47,4 +47,71 @@
             </ng-container>
         </tr>
     </tbody>
-</table>
+</table> -->
+
+<div class="container-fluid mb-3 text-center">
+    <h4 class="text-warning">Search jobs and internships</h4>
+</div>
+
+<!-- Inline Skills, Location, Experience Input Form -->
+<div class="form-inline d-flex justify-content-center mb-2">
+    <input
+        type="text"
+        class="form-control mr-2"
+        placeholder="Skills, designations, companies"
+        [(ngModel)]="searchSkills"
+        style="width: 25%;"
+    >
+    <input
+        type="text"
+        class="form-control mr-2"
+        placeholder="Location"
+        [(ngModel)]="searchLocation"
+        style="width: 20%;"
+    >
+    <input
+        type="text"
+        class="form-control mr-2"
+        placeholder="Experience (e.g., 2-5 Yrs)"
+        [(ngModel)]="searchExperience"
+        style="width: 15%;"
+    >
+    <button (click)="searchJobs()" class="btn btn-primary">Search jobs</button>
+</div>
+
+<!-- Display Filtered Job Results (Table) -->
+<div class="container-fluid mb-3 text-center" *ngIf="filteredCityData.length > 0">
+    <h4 class="text-secondary">Job Results</h4>
+    <table class="table mt-2">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Location</th>
+                <th scope="col">Technologies</th>
+                <th scope="col">Company Name</th>
+                <th scope="col">Experience</th>
+                <th scope="col">Immediate Joiner</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let row of filteredCityData">
+                <td>{{ row.id }}</td>
+                <td>{{ row.CityName }}</td>
+                <td>{{ row.Technologies }}</td>
+                <td>{{ row.CompanyName }}</td>
+                <td>{{ row.Experience }}</td>
+                <td>{{ row.immediatejoiner }}</td>
+                <td>
+                    <button
+                        (click)="applyTheJob(row)"
+                        type="button"
+                        class="btn btn-primary btn-sm">
+                        Apply
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+

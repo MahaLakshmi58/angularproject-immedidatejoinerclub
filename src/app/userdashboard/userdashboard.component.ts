@@ -1,70 +1,125 @@
+// import { HttpClient } from '@angular/common/http';
+// import { Component, OnInit } from '@angular/core';
+// import { FormBuilder, FormGroup } from '@angular/forms'
+// import { ApiService } from '../Shared/api.service';
+// import { userModel } from './userDashboardModel';
+// @Component({
+//   selector: 'app-userdashboard',
+//   templateUrl: './userdashboard.component.html',
+//   styleUrls: ['./userdashboard.component.css']
+// })
+
+// export class UserdashboardComponent implements OnInit {
+
+//   cityData !: any;
+//   loginData !: any;
+//   RegData !: any;
+//   selected: any;
+//   userModelObj: userModel = new userModel();
+//   //immediatejoinerData: any;
+//   constructor(private formbuilder: FormBuilder, private api: ApiService, private http: HttpClient) { }
+
+//   ngOnInit(): void {
+//     this.api.getF()
+//       .subscribe(res => {
+//         this.cityData = res;
+//       })
+//     this.api.getReg()
+//       .subscribe(res => {
+//         this.RegData = res;
+//       })
+//     this.api.getLogin()
+//       .subscribe(res => {
+//         this.loginData = res;
+//       })
+//   }
+
+//   getAllCities() {
+//     this.api.getF()
+//       .subscribe(res => {
+//         this.cityData = res;
+//       })
+//   }
+//   applythejob(Technologies: any, CompanyName: any, City: any, Experience: any, immediatejoiner: any) {
+//     for (let i = 0; i < this.RegData.length; i++) {
+//       if (this.RegData[i].email == this.loginData[this.loginData.length - 1].email && this.RegData[i].password == this.loginData[this.loginData.length - 1].password) {
+//         this.userModelObj.CustomerName = this.RegData[i].fullname;
+//         this.userModelObj.email = this.RegData[i].email;
+//         this.userModelObj.phone = this.RegData[i].mobile;
+//         this.userModelObj.Experience = this.RegData[i].Experience;
+//         this.userModelObj.Technologies = this.RegData[i].Technologies;
+//         this.userModelObj.immediatejoiner = this.RegData[i].immediatejoiner;
+//       }
+//     }
+//     this.userModelObj.CityName = City;
+//     this.userModelObj.CompanyName = CompanyName;
+//     this.userModelObj.Technologies = Technologies;
+//     this.userModelObj.Experience = Experience;
+//     this.userModelObj.immediatejoiner =immediatejoiner;
+
+
+//     this.api.postapplythejobDetails(this.userModelObj)
+//       .subscribe(res => {
+//         console.log(res);
+//         alert("Profile successfully");
+//       }, err => {
+//         alert("something went wrong");
+//       })
+//   }
+// }
+
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms'
 import { ApiService } from '../Shared/api.service';
 import { userModel } from './userDashboardModel';
+
 @Component({
   selector: 'app-userdashboard',
   templateUrl: './userdashboard.component.html',
   styleUrls: ['./userdashboard.component.css']
 })
-
 export class UserdashboardComponent implements OnInit {
 
-  cityData !: any;
-  loginData !: any;
-  RegData !: any;
-  selected: any;
+  cityData: any[] = [];
+  filteredCityData: any[] = [];
+  searchSkills: string = '';
+  searchLocation: string = '';
+  searchExperience: string = '';
+  searchAttempted: boolean = false;
   userModelObj: userModel = new userModel();
-  //immediatejoinerData: any;
-  constructor(private formbuilder: FormBuilder, private api: ApiService, private http: HttpClient) { }
+
+  constructor(private api: ApiService) { }
 
   ngOnInit(): void {
-    this.api.getF()
-      .subscribe(res => {
-        this.cityData = res;
-      })
-    this.api.getReg()
-      .subscribe(res => {
-        this.RegData = res;
-      })
-    this.api.getLogin()
-      .subscribe(res => {
-        this.loginData = res;
-      })
+    this.api.getF().subscribe(res => {
+      this.cityData = res;
+    });
   }
 
-  getAllCities() {
-    this.api.getF()
-      .subscribe(res => {
-        this.cityData = res;
-      })
+  searchJobs() {
+    this.searchAttempted = true;
+    this.filteredCityData = this.cityData.filter(job =>
+      job.Technologies?.toLowerCase().includes(this.searchSkills.toLowerCase()) &&
+      job.CityName?.toLowerCase().includes(this.searchLocation.toLowerCase()) &&
+      job.Experience?.includes(this.searchExperience)
+    );
   }
-  applythejob(Technologies: any, CompanyName: any, City: any, Experience: any, immediatejoiner: any) {
-    for (let i = 0; i < this.RegData.length; i++) {
-      if (this.RegData[i].email == this.loginData[this.loginData.length - 1].email && this.RegData[i].password == this.loginData[this.loginData.length - 1].password) {
-        this.userModelObj.CustomerName = this.RegData[i].fullname;
-        this.userModelObj.email = this.RegData[i].email;
-        this.userModelObj.phone = this.RegData[i].mobile;
-        this.userModelObj.Experience = this.RegData[i].Experience;
-        this.userModelObj.Technologies = this.RegData[i].Technologies;
-        this.userModelObj.immediatejoiner = this.RegData[i].immediatejoiner;
-      }
-    }
-    this.userModelObj.CityName = City;
-    this.userModelObj.CompanyName = CompanyName;
-    this.userModelObj.Technologies = Technologies;
-    this.userModelObj.Experience = Experience;
-    this.userModelObj.immediatejoiner =immediatejoiner;
 
+  applyTheJob(job: any) {
+    this.userModelObj.CityName = job.CityName;
+    this.userModelObj.CompanyName = job.CompanyName;
+    this.userModelObj.Technologies = job.Technologies;
+    this.userModelObj.Experience = job.Experience;
+    this.userModelObj.immediatejoiner = job.immediatejoiner;
 
-    this.api.postapplythejobDetails(this.userModelObj)
-      .subscribe(res => {
+    this.api.postapplythejobDetails(this.userModelObj).subscribe(
+      res => {
         console.log(res);
-        alert("Profile successfully");
-      }, err => {
-        alert("something went wrong");
-      })
+        alert("Profile successfully applied");
+      },
+      err => {
+        alert("Something went wrong");
+      }
+    );
   }
 }
-

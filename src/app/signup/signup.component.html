@@ -1,55 +1,79 @@
-
 <div class="container">
-  <div class="row">
-      <div class="col-md-6">
-          <div class="card">
-              <div class="text-center">
-                  <h1>Sign Up</h1>
-                  <h6>Register Yourself !!</h6> 
-              </div>
-              <form [formGroup]="signupForm" (ngSubmit)="signUp()">
-                  <div class="mb-2">
-                      <label for="fullname" class="form-label">Full Name</label>
-                      <input formControlName="fullname" type="text" class="form-control" id="fullname" placeholder="Name">
-                      <span class="text-danger" *ngIf="signupForm.controls['fullname'].touched && signupForm.hasError('required', 'fullname')">*Full name is required</span>
-                  </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Register as Candidate</h1>
+                    <h6>Register Yourself !!</h6>
+                </div>
+                <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+                    <div class="mb-2">
+                        <label for="fullname" class="form-label">Full Name</label>
+                        <input formControlName="fullname" type="text" class="form-control" id="fullname"
+                            placeholder="Name">
+                        <span class="text-danger"
+                            *ngIf="signupForm.controls['fullname'].touched && signupForm.hasError('required', 'fullname')">*Full
+                            name is required</span>
+                    </div>
 
-                  <div class="mb-2">
-                      <label for="mobile" class="form-label">Mobile Number</label>
-                      <input formControlName="mobile" type="text" class="form-control" id="mobile" placeholder="Phone" required>
-                      <span class="text-danger" *ngIf="signupForm.controls['mobile'].touched && signupForm.hasError('required', 'mobile')">*Mobile number is required</span>
-                  </div>
+                    <div class="mb-2">
+                        <label for="mobile" class="form-label">Mobile Number</label>
+                        <input formControlName="mobile" type="text" class="form-control" id="mobile" placeholder="Phone"
+                            required>
+                        <span class="text-danger"
+                            *ngIf="signupForm.controls['mobile'].touched && signupForm.hasError('required', 'mobile')">*Mobile
+                            number is required</span>
+                    </div>
 
-                  <div class="mb-2">
-                      <label for="email" class="form-label">Email Address</label>
-                      <input formControlName="email" type="email" class="form-control" id="email" placeholder="E-mail" required>
-                      <div id="emailHelp" class="form-text" style="color: yellowgreen;">We'll never share your email with anyone else.</div>
-                      <span class="text-danger" *ngIf="signupForm.controls['email'].touched && signupForm.hasError('required', 'email')">*Email is required</span>
-                  </div>
+                    <div class="mb-2">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input formControlName="email" type="email" class="form-control" id="email" placeholder="E-mail"
+                            required>
+                        <div id="emailHelp" class="form-text" style="color: yellowgreen;">We'll never share your email
+                            with anyone else.</div>
+                        <span class="text-danger"
+                            *ngIf="signupForm.controls['email'].touched && signupForm.hasError('required', 'email')">*Email
+                            is required</span>
+                    </div>
 
-                  <div class="mb-2">
-                      <label for="password" class="form-label">Password</label>
-                      <input formControlName="password" type="password" class="form-control" id="password" placeholder="Password">
-                      <span class="text-danger" *ngIf="signupForm.controls['password'].touched && signupForm.hasError('required', 'password')">*Password is required</span>
-                  </div>
+                    <div class="mb-2">
+                        <label for="password" class="form-label">Password</label>
+                        <input formControlName="password" type="password" class="form-control" id="password"
+                            placeholder="Password">
+                        <span class="text-danger"
+                            *ngIf="signupForm.controls['password'].touched && signupForm.hasError('required', 'password')">*Password
+                            is required</span>
+                    </div>
 
-                  <div class="mb-2">
-                      <label for="resume" class="form-label">Resume</label>
-                      <input formControlName="resume" type="file" class="form-control" id="resume">
-                      <span class="text-danger" *ngIf="signupForm.controls['resume'].touched && signupForm.hasError('required', 'resume')">*Resume is required</span>
-                  </div>
+                    <div class="mb-2">
+                        <label for="resume" class="form-label">Resume</label>
+                        <input formControlName="resume" type="file" class="form-control" id="resume">
+                        <span class="text-danger"
+                            *ngIf="signupForm.controls['resume'].touched && signupForm.hasError('required', 'resume')">*Resume
+                            is required</span>
+                    </div>
 
-                  <div class="mb-2">
-                      <label for="lastWorkingDate" class="form-label">Last Working Date</label>
-                      <input formControlName="lastWorkingDate" type="date" class="form-control" id="lastWorkingDate">
-                      <span class="text-danger" *ngIf="signupForm.controls['lastWorkingDate'].touched && signupForm.hasError('required', 'lastWorkingDate')">*Last working date is required</span>
-                  </div>
+                    <div class="mb-2">
+                        <label for="lastWorkingDate" class="form-label">Last Working Date</label>
+                        <input formControlName="lastWorkingDate" type="date" class="form-control" id="lastWorkingDate">
+                        <span class="text-danger"
+                            *ngIf="signupForm.controls['lastWorkingDate'].touched && signupForm.hasError('required', 'lastWorkingDate')">*Last
+                            working date is required</span>
+                    </div>
 
-                  <button type="submit" [disabled]="!signupForm.valid" class="btn btn-primary mb-2">Submit</button>
-              </form>
-              <a style="color:aliceblue; margin-top: 10px;" href="/login">Already Registered User? Click to Login</a>
-              <a style="color:aliceblue; margin-top: 10px;" href="/admin">Admin? Click to Login</a>
-          </div>
-      </div>
-  </div>
+                    <button type="submit" [disabled]="!signupForm.valid" class="btn btn-primary mb-2">Submit</button>
+                    <div id="g_id_onload"
+                        data-client_id="417316527873-g0jalc02lsskc3a47lgulmf2rusfidpn.apps.googleusercontent.com"
+                        data-context="use" data-ux_mode="popup" data-itp_support="true"
+                        data-callback="handleCredentialResponse"></div>
+                    <!-- data-auto-select="true" -->
+                    <div class="g_id_signin" data-type="standard" data-shape="pill" data-theme="filled_blue"
+                        data-text="signin_with" data-size="large" data-logo_alignment="left"></div>
+                </form>
+                <a style="color:rgb(55, 150, 234); margin-top: 10px;" href="/login">Already Registered User? Click to
+                    Login</a>
+                <a style="color:rgb(64, 158, 240); margin-top: 10px;" href="/admin">Admin? Click to Login</a>
+            </div>
+        </div>
+    </div>
 </div>

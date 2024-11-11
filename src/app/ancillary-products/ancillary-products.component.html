@@ -17,10 +17,10 @@
         <tr >
             <th scope="col">id</th>
             <th scope="col">Place</th>
-            <th scope="col">Pizza</th>
-            <th scope="col">Rolls</th>
-            <th scope="col">Shakes</th>
-            <th scope="col">Cakes</th>
+            <th scope="col">angular</th>
+            <th scope="col">java</th>
+            <th scope="col">Sql</th>
+            <th scope="col">node.js</th>
             
         
         </tr>
@@ -32,16 +32,16 @@
             </td>
             <td>{{row.CityName}}</td>
             <td>{{row.Pizza}}
-                <button (click)="bookTechnologies(row.Pizza,row.CityName)" type="button" class="btn btn-primary btn-sm">Book</button>
+                <button (click)="bookTechnologies(row.angular,row.CityName)" type="button" class="btn btn-primary btn-sm">Book</button>
             </td>
             <td>{{row.Rolls}}
-                <button (click)="bookTechnologies(row.Rolls,row.CityName)" type="button" class="btn btn-primary btn-sm">Book</button>
+                <button (click)="bookTechnologies(row.java,row.CityName)" type="button" class="btn btn-primary btn-sm">Book</button>
             </td>
             <td>{{row.Cakes}}
-                <button (click)="bookTechnologies(row.Cakes,row.CityName)" type="button" class="btn btn-primary btn-sm">Book</button>
+                <button (click)="bookTechnologies(row.sql,row.CityName)" type="button" class="btn btn-primary btn-sm">Book</button>
             </td>
             <td>{{row.Shakes}}
-                <button (click)="bookTechnologies(row.Shakes,row.CityName)" type="button" class="btn btn-primary btn-sm">Book</button>
+                <button (click)="bookTechnologies(row.node.js,row.CityName)" type="button" class="btn btn-primary btn-sm">Book</button>
             </td>
             </ng-container>
         </tr>

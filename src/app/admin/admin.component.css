@@ -6,8 +6,9 @@
     left: 50%;
     bottom: 50%;
     transform: translate(-50%,50%);
-    background: hsla(205, 46%,35%, 1);
-    background: linear-gradient(90deg, rgb(23, 110, 172) 0%, rgb(96, 39, 212)100%);
+    background: rgb(203, 210, 215);
+    /* background: linear-gradient(90deg, rgb(117, 123, 223) 0%, rgb(152, 154, 238)50%, rgb(173, 175, 234)100%, rgb(221, 221, 234)); */
+    background: white;
     align-items: center;
     display: flex;
     

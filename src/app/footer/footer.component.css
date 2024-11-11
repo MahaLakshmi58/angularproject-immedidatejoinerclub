@@ -13,12 +13,12 @@
     overflow:hidden;
     position:sticky;
     top:100%;
-    background-color: blue;
+    background-color: white;
     padding:10px 10px
 
 }
 h2{
-    color:white;
+    color:rgb(42, 41, 41);
     font-size: 20px;
     text-align: center;
 }
