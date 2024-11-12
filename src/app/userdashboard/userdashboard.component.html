@@ -53,33 +53,17 @@
     <h4 class="text-warning">Search jobs and internships</h4>
 </div>
 
-<!-- Inline Skills, Location, Experience Input Form -->
+
 <div class="form-inline d-flex justify-content-center mb-2">
-    <input
-        type="text"
-        class="form-control mr-2"
-        placeholder="Skills, designations, companies"
-        [(ngModel)]="searchSkills"
-        style="width: 25%;"
-    >
-    <input
-        type="text"
-        class="form-control mr-2"
-        placeholder="Location"
-        [(ngModel)]="searchLocation"
-        style="width: 20%;"
-    >
-    <input
-        type="text"
-        class="form-control mr-2"
-        placeholder="Experience (e.g., 2-5 Yrs)"
-        [(ngModel)]="searchExperience"
-        style="width: 15%;"
-    >
+    <input type="text" class="form-control mr-2" placeholder="Skills, designations, companies"
+        [(ngModel)]="searchSkills" style="width: 25%;">
+    <input type="text" class="form-control mr-2" placeholder="Location" [(ngModel)]="searchLocation"
+        style="width: 20%;">
+    <input type="text" class="form-control mr-2" placeholder="Experience (e.g., 2-5 Yrs)" [(ngModel)]="searchExperience"
+        style="width: 15%;">
     <button (click)="searchJobs()" class="btn btn-primary">Search jobs</button>
 </div>
 
-<!-- Display Filtered Job Results (Table) -->
 <div class="container-fluid mb-3 text-center" *ngIf="filteredCityData.length > 0">
     <h4 class="text-secondary">Job Results</h4>
     <table class="table mt-2">
@@ -104,14 +88,10 @@
                 <td>{{ row.immediatejoiner }}</td>
                 <td>
                     <button
-                        (click)="applyTheJob(row)"
-                        type="button"
-                        class="btn btn-primary btn-sm">
-                        Apply
-                    </button>
+                        (click)="applythejob(row.Technologies, row.CompanyName, row.CityName, row.Experience, row.immediatejoiner)"
+                        type="button" class="btn btn-primary btn-sm">Apply</button>
                 </td>
             </tr>
         </tbody>
     </table>
 </div>
-
