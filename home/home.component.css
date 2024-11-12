@@ -1,0 +1,13 @@
+body {
+  font-family: Calibri, sans-serif;
+  margin: 20;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+img {
+  width: 100%;
+  max-height: 100%;
+}

@@ -1,0 +1,50 @@
+<!-- 
+<div class="container-fluid mb-3" align="center">
+    <h4 style="color: rgb(203, 162, 66);">Select The Place</h4>
+</div>
+<select class="form-select" multiple aria-label="multiple select example"[(ngModel)]="selected">
+    
+    <option *ngFor="let x of cityData">{{x.CityName}}</option>
+  </select>
+  <br/>
+  <div class="container-fluid mb-3" align="center">
+    <h4 style="color: rgb(130, 66, 203);">Book Technologies </h4>
+</div>
+
+
+  <table class="table mt-2">
+    <thead >
+        <tr >
+            <th scope="col">id</th>
+            <th scope="col">Place</th>
+            <th scope="col">angular</th>
+            <th scope="col">java</th>
+            <th scope="col">Sql</th>
+            <th scope="col">node.js</th>
+            
+        
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of cityData" >
+            <ng-container *ngIf="row.CityName==selected">
+            <td>{{row.id}}
+            </td>
+            <td>{{row.CityName}}</td>
+            <td>{{row.Pizza}}
+                <button (click)="bookTechnologies(row.angular,row.CityName)" type="button" class="btn btn-primary btn-sm">Book</button>
+            </td>
+            <td>{{row.Rolls}}
+                <button (click)="bookTechnologies(row.java,row.CityName)" type="button" class="btn btn-primary btn-sm">Book</button>
+            </td>
+            <td>{{row.Cakes}}
+                <button (click)="bookTechnologies(row.sql,row.CityName)" type="button" class="btn btn-primary btn-sm">Book</button>
+            </td>
+            <td>{{row.Shakes}}
+                <button (click)="bookTechnologies(row.node.js,row.CityName)" type="button" class="btn btn-primary btn-sm">Book</button>
+            </td>
+            </ng-container>
+        </tr>
+    </tbody>
+</table>
+ -->

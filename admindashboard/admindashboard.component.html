@@ -1,0 +1,81 @@
+<nav class="navbar navbar-light bg-secondary">
+    <div class="container-fluid">
+        <h2 style="color: rgb(36, 82, 196);">Candidate DashBoard</h2>
+        <div class="d-flex">
+            <button (click)="clickAddJobs()" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success">Add Jobs</button>
+            
+        </div>
+    </div>
+</nav>
+<table class="table mt-3">
+    <thead >
+        <tr >
+            <th scope="col">id</th>
+            <th scope="col">Location</th>
+            <th scope="col">Technologies</th>
+            <th scope="col">CompanyName</th>
+            <th scope="col">Experience</th>
+            <th scope="col">immediatejoiner</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of cityData">
+            <td>{{row.id}}</td>
+            <td>{{row.CityName}}</td>
+            <td>{{row.Technologies}}</td>
+            <td>{{row.CompanyName}}</td>
+            <td>{{row.Experience}}</td>
+            <td>{{row.immediatejoiner}}</td>
+            <td><button (click)="onEdit(row)" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-info">Edit</button>
+                <button (click)="deleteJob(row)" class="btn btn-danger mx-3">delete</button></td>
+        </tr>
+    </tbody>
+</table>
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">City Companies</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="formValue">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Place</label>
+                  <input type="text" formControlName="CityName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Technologies</label>
+                    <input type="text" formControlName="Technologies" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">CompanyName</label>
+                    <input type="text" formControlName="CompanyName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <span class="text-danger" *ngIf="formValue.controls['CompanyName'].touched && formValue.hasError('required')">*required</span>
+                  </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Experience</label>
+                    <input type="text" formControlName="Experience" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <span class="text-danger" *ngIf="formValue.controls['Experience'].touched && formValue.hasError('required')">*required</span>
+                  </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">immediatejoiner</label>
+                    <input type="text" formControlName="immediatejoiner" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <span class="text-danger" *ngIf="formValue.controls['immediatejoiner'].touched && formValue.hasError('required')">*required</span>
+                  </div>
+               
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button"  (click)="postJob()" [disabled]="!formValue.valid" class="btn btn-primary">Add</button>
+          <button type="button" *ngIf="showUpdate" (click)="updateJob()" class="btn btn-success">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,27 @@
+.card{
+    border: none;
+    width: 500px;
+    padding: 40px;
+    position: relative;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%,50%);
+    background: rgb(203, 210, 215);
+    /* background: linear-gradient(90deg, rgb(117, 123, 223) 0%, rgb(152, 154, 238)50%, rgb(173, 175, 234)100%, rgb(221, 221, 234)); */
+    background: white;
+    align-items: center;
+    display: flex;
+    
+}
+.container{
+    
+    max-width: 100px;
+    margin:auto;
+
+  
+}
+@media screen and (max-width: 300px) {
+   div.card  {
+       display: block;
+       float: none;
+    }}

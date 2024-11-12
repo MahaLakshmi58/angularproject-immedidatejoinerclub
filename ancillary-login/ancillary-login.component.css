@@ -1,0 +1,19 @@
+.card{
+    border: none;
+    width: 500px;
+    padding: 40px;
+    position: relative;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%,50%);
+    background: rgb(228, 233, 236);
+    background: linear-gradient(90deg, rgb(192, 193, 211) 0%, rgb(204, 204, 207)50%, rgb(219, 219, 228)100%, rgb(221, 221, 234));
+    display: flex
+}
+.container{
+    
+    max-width: 100px;
+    margin:auto;
+
+  
+}

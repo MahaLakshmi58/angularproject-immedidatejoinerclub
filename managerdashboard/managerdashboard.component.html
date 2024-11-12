@@ -1,0 +1,32 @@
+
+  <div class="container-fluid mb-3" align="center">
+    <h4 style="color: rgb(130, 66, 203);">Profile Details</h4>
+</div>
+
+<table class="table mt-2">
+    <thead>
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">Candidate Name</th>
+            <th scope="col">E-mail</th>
+            <th scope="col">CompanyName</th>
+            <th scope="col">Technologies</th>
+            <th scope="col">Location</th>
+            <th scope="col">Experience</th>
+            <th scope="'col">immediatejoiner</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of applyJob">
+            <td>{{ row.id }}</td>
+            <td>{{ row.CustomerName }}</td>
+            <td>{{ row.email || row.email}}</td>
+            <td>{{ row.CompanyName|| row.CompanyName}}</td>
+            <td>{{ row.Technologies || row.Technologies}}</td>
+            <td>{{ row.CityName || row.city_name }}</td>
+            <td>{{ row.location || row.Location }}</td>
+            <td>{{ row.Experience || row.Experience }}</td>
+            <td>{{row.immediatejoiner|| row.immediatejoiner}}</td>
+        </tr>
+    </tbody>
+</table>

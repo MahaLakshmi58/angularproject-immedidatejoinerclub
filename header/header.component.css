@@ -1,0 +1,138 @@
+/* body {
+    font-family: Calibri, sans-serif;
+    margin: 20;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    background: linear-gradient(180deg, rgb(158, 227, 120), rgb(184, 108, 106));
+    padding: 5px;
+    color: rgb(76, 25, 25);
+}
+
+nav {
+    background-color: rgb(245, 239, 234);
+    font-size: 20px;
+    align-items: center;
+
+}
+
+nav a {
+    color: rgb(12, 11, 11);
+    text-decoration: none;
+    padding: 10px 25px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+nav a:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+.dropdown {
+    padding: 10px 10px;
+    display: inline-block;
+}
+
+.active {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.abc {
+    color: brown;
+    font-size: large;
+}
+
+.xyz {
+    color: rgb(177, 163, 175);
+    font-size: 5px;
+}
+
+.abcd {
+    color: rgb(172, 38, 107);
+    font-size: 50px;
+    font-family: 'Times New Roman';
+} */
+
+body {
+    font-family: Calibri, sans-serif;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    background: white;
+    /* background: linear-gradient(180deg, rgb(158, 227, 120), rgb(184, 108, 106)); */
+    padding: 10px;
+    color: rgb(76, 25, 25);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-nav a {
+    color: rgb(12, 11, 11);
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+.header-nav a:hover {
+    background-color: lightgray;
+    color: black;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-menu {
+    position: absolute;
+    /* display: none; */
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.dropdown .btn {
+    font-size: 16px;
+    background-color: white;
+    /* Set background color to white */
+    color: black;
+    /* Set text color to black for contrast */
+    border: 1px solid #ccc;
+    /* Optional: add a border for better visibility */
+}
+
+.dropdown .btn:hover {
+    background-color: lightgray;
+    /* Change background color on hover if desired */
+    color: black;
+}

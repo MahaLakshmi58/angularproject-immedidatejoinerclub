@@ -1,0 +1,83 @@
+<!-- <nav class="navbar navbar-light bg-secondary">
+  <div class="container-fluid">
+      <h1 style="color: rgb(36, 82, 196);"> techonology DashBoard</h1>
+      <div class="d-flex">
+          <button (click)="clickAddcompanies()" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success">Add Technologies</button>
+          
+      </div>
+  </div>
+</nav>
+<table class="table mt-3">
+    <thead >
+        <tr >
+            <th scope="col">id</th>
+            <th scope="col">Place</th>
+            <th scope="col">Pizza</th>
+            <th scope="col">Rolls</th>
+            <th scope="col">Cakes</th>
+            <th scope="col">Shakes</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of cityData">
+            <td>{{row.id}}</td>
+            <td>{{row.CityName}}</td>
+            <td>{{row.Pizza}}</td>
+            <td>{{row.Rolls}}</td>
+            <td>{{row.Cakes}}</td>
+            <td>{{row.Shakes}}</td>
+            <td><button (click)="onEdit(row)" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-info">Edit</button>
+                <button (click)="deleteJob(row)" class="btn btn-danger mx-3">delete</button></td>
+        </tr>
+    </tbody>
+</table>
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">City Technologies</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="formValue">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Place</label>
+                  <input type="text" formControlName="CityName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                 <!-- <span class="text-danger" *ngIf="formValue.controls['cityName'].touched && formValue.hasError('required')">*required</span>-->
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Pizza</label>
+                    <input type="text" formControlName="Pizza" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                   <!--<span class="text-danger" *ngIf="formValue.controls['pizza'].touched && formValue.hasError('required')">*required</span>-->
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Rolls</label>
+                    <input type="text" formControlName="Rolls" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <span class="text-danger" *ngIf="formValue.controls['Rolls'].touched && formValue.hasError('required')">*required</span>
+                  </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Cakes</label>
+                    <input type="text" formControlName="Cakes" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <span class="text-danger" *ngIf="formValue.controls['Cakes'].touched && formValue.hasError('required')">*required</span>
+                  </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Shakes</label>
+                    <input type="text" formControlName="Shakes" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                   <span class="text-danger" *ngIf="formValue.controls['Shakes'].touched && formValue.hasError('required')">*required</span>
+                  </div>
+               
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button"  (click)="postTechnologies()" class="btn btn-primary" [disabled]="!formValue.valid">Add</button>
+          <button type="button" *ngIf="showUpdate" (click)="UpadateTechnologies()" class="btn btn-success">Update</button>
+        </div>
+      </div>
+    </div>
+  </div> -->

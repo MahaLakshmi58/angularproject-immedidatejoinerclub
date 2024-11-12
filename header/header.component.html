@@ -1,0 +1,72 @@
+<!-- 
+<header>
+    <h2>Immediate Joiner Club</h2>
+
+<nav>
+   
+  <a [routerLink]="'/home'" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact:true}">Home </a>
+  <a routerLink="/about" routerLinkActive=" active" [routerLinkActiveOptions]="{exact:true}">About</a>
+  <a routerLink="/login" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Login</a>
+  <a routerLink="/signup" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Signup</a>
+  
+
+  <div class="dropdown">
+    <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      User Dashboard
+    </button>
+    <ul class="dropdown-menu">
+      
+      <li><a class="dropdown-item" routerLink="/login" routerLinkActive="active">Profile</a></li>
+    </ul>
+  </div>
+ 
+  
+  <div class="dropdown">
+    <button class="btn btn-info dropdown-toggle" style="background-color: black; border-color: aqua; " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Admin Dashboard
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item"routerLink="/admin-login" >Add Jobs</a></li>
+     
+      <li><a class="dropdown-item" routerLink="/manager">Profile History</a></li>
+      
+    </ul>
+  </div>
+  
+  <a routerLink="/contact" routerLinkActive="active">Help Center</a>
+</nav>
+
+</header> -->
+
+<header>
+  <div class="header-container">
+    <h2 class="header-title">Immediate Joiner Club</h2>
+
+    <nav class="header-nav">
+      <a [routerLink]="'/home'" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact:true}">Home</a>
+      <a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">About</a>
+      <a routerLink="/login" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Login</a>
+      <a routerLink="/signup" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Signup</a>
+
+      <div class="dropdown">
+        <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          User Dashboard
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" routerLink="/login">Profile</a></li>
+          <!-- <li><a class="dropdown-item" routerLink="/login" routerLinkActive="active">Profile</a></li> -->
+        </ul>
+      </div>
+
+      <div class="dropdown">
+        <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Admin Dashboard
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" routerLink="/admin-login">Add Jobs</a></li>
+          <li><a class="dropdown-item" routerLink="/manager">Profile History</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
