@@ -42,7 +42,7 @@ login()
         alert("something went wrong");
       })
       this.loginForm.reset();
-      this.router.navigate(['userDashborad']);
+      this.router.navigate(['userDasboard']);
     }
     else{
       alert("User not found");

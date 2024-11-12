@@ -71,7 +71,7 @@
 //     this.http.post<any>("http://localhost:3000/signupUsers", user).subscribe(
 //       res => {
 //         alert("Signup Successful");
-//         this.router.navigate(['userDashborad']);
+//         this.router.navigate(['userDasboard']);
 //       },
 //       err => {
 //         alert("Something went wrong");
@@ -150,7 +150,7 @@ export class SignupComponent implements OnInit {
     this.http.post<any>("http://localhost:3000/signupUsers", user).subscribe(
       res => {
         alert("Signup Successful");
-        this.router.navigate(['userDashborad']);
+        this.router.navigate(['userDasboard']);
       },
       err => {
         alert("Something went wrong");

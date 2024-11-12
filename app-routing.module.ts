@@ -30,7 +30,7 @@ const routes: Routes = [
  {path : 'admin',component:AdminComponent},
   {path : 'admin-login',component:AdminComponent,canActivate:[AuthGuard]},
 {path : 'adminDashboard',component:AdmindashboardComponent,canActivate:[AuthGuard]},
-  {path :'userDashborad', component:UserdashboardComponent},
+  {path :'userDasboard', component:UserdashboardComponent},
   {path:'manager',component:ManagerComponent,canActivate:[AuthGuard]},
   {path:'managerDashboard', component:ManagerdashboardComponent,canActivate:[AuthGuard]},
   {path:'ancillary-products',component:AncillaryProductsComponent},
