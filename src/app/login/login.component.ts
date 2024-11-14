@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
 
 login()
 {
-  this.http.get<any>("http://localhost:3000/signupUsers")
+  this.http.get<any>("https://json-server-2h1w.onrender.com/signupUsers")
   .subscribe(res=>{
     const user=res.find((a:any)=>{
      return a.email===this.loginForm.value.email && a.password===this.loginForm.value.password
@@ -42,7 +42,7 @@ login()
         alert("something went wrong");
       })
       this.loginForm.reset();
-      this.router.navigate(['userDashborad']);
+      this.router.navigate(['userDasboard']);
     }
     else{
       alert("User not found");

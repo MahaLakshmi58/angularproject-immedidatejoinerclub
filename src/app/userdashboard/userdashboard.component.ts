@@ -89,6 +89,8 @@ export class UserdashboardComponent implements OnInit {
   searchExperience: string = '';
   searchAttempted: boolean = false;
   userModelObj: userModel = new userModel();
+featuredCompanies: any;
+trendingCategories: any;
 
   constructor(private api: ApiService) { }
 

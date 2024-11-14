@@ -49,7 +49,7 @@
     </tbody>
 </table> -->
 
-<div class="container-fluid mb-3 text-center">
+<!-- <div class="container-fluid mb-3 text-center">
     <h4 class="text-warning">Search jobs and internships</h4>
 </div>
 
@@ -94,4 +94,119 @@
             </tr>
         </tbody>
     </table>
+</div> -->
+<div class="container-fluid mb-3 text-center">
+    <h4 class="text-warning">Search Jobs and Internships</h4>
+     <p>5 lakh+ jobs for you to explore</p>
 </div>
+
+<div class="form-inline d-flex justify-content-center mb-2">
+    <input type="text" class="form-control mr-2" placeholder="Skills, designations, companies"
+        [(ngModel)]="searchSkills" style="width: 25%;">
+    <input type="text" class="form-control mr-2" placeholder="Location" [(ngModel)]="searchLocation"
+        style="width: 20%;">
+    <input type="text" class="form-control mr-2" placeholder="Experience (e.g., 2-5 Yrs)" [(ngModel)]="searchExperience"
+        style="width: 15%;">
+    <button (click)="searchJobs()" class="btn btn-primary">Search Jobs</button>
+</div>
+<div id="Slidhsow-container">
+    <h4 id="trendHead" style="text-align: center;">Trending on Immediate Joiner Club today</h4>
+    <div id="main-slider">
+        <!-- --left arrow  -->
+
+        <div class="slide" id="c1" onclick="window.open('https://www.youtube.com/','mywindow');"
+            style="cursor: pointer; display: inline-block;">
+            <div class="images">
+                <img src="https://static.naukimg.com/s/0/0/i/trending-naukri/remote.svg">
+            </div>
+            <div class="text">
+                <h6>Remote </h6>
+                <p>5.3k + jobs</p>
+            </div>
+        </div>
+        <div class="slide" id="c2" onclick="window.open('https://www.youtube.com/','mywindow');"
+            style="cursor: pointer; display: inline-block;">
+            <div class="images">
+                <img src="https://static.naukimg.com/s/0/0/i/trending-naukri/mnc.svg">
+            </div>
+            <div class="text">
+                <h6>MNC</h6>
+                <p>19.3k+ jobs</p>
+            </div>
+        </div>
+
+        <div class="slide" id="c3" onclick="window.open('https://www.youtube.com/','mywindow');"
+            style="cursor: pointer; display: inline-block;">
+            <div class="images">
+                <img src="https://static.naukimg.com/s/0/0/i/trending-naukri/engineering.svg">
+            </div>
+            <div class="text">
+                <h6>Engineering</h6>
+                <p>16.3k +jobs</p>
+            </div>
+        </div>
+    </div>
+    <h4 style="text-align: center;">Featured companies actively hiring</h4>
+
+    <!-- ---2nd Slider - -->
+    <div id="main-slider">
+        <!-- --left arrow   -->
+
+        <div class="slide" id="d1" style="cursor: pointer; display: inline-block;">
+            <div class="images">
+                <img src="https://img.naukimg.com/logo_images/groups/v2/226728.gif">
+            </div>
+            <div class="text">
+                <h6>L&amp;T Infotech (LTI) </h6>
+                <p>3.4 reviews</p>
+            </div>
+            <a href="http://example.com">
+                <span class="linkSpanner"></span>
+            </a>
+        </div>
+        <div class="slide " id="d2" style="cursor: pointer; display: inline-block;">
+            <div class="images">
+                <img src="https://img.naukimg.com/logo_images/groups/v2/58550.gif">
+            </div>
+            <div class="text">
+                <h6>FIITJEE</h6>
+                <p>3.5 reviews</p>
+            </div>
+        </div>
+
+        <div class="slide" id="d3" style="cursor: pointer; display: inline-block;">
+            <div class="images">
+                <img src="https://img.naukimg.com/logo_images/groups/v2/1288.gif">
+            </div>
+            <div class="text">
+                <h6>Capgemini</h6>
+                <p>16.3k +reviews</p>
+            </div>
+        </div>
+        <div class="slide" id="d4" style="cursor: pointer; display: inline-block;">
+            <div class="images">
+                <img src="https://img.naukimg.com/logo_images/groups/v2/419316.gif">
+            </div>
+            <div class="text">
+                <h6>Software &amp;It</h6>
+                <p>204.5k + reviews</p>
+            </div>
+        </div>
+
+
+        <div class="container-fluid mb-3" *ngIf="filteredCityData.length > 0">
+            <h4 class="text-secondary text-center">Job Results</h4>
+            <div *ngFor="let row of filteredCityData" class="job-card">
+                <div class="job-card-content">
+                    <h5 class="job-title">{{ row.Technologies }} Developer</h5>
+                    <p class="company-name">{{ row.CompanyName }}</p>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> {{ row.CityName }}</p>
+                    <p class="experience"><i class="fas fa-briefcase"></i> {{ row.Experience }} Yrs</p>
+                    <p class="technologies">Skills: {{ row.Technologies }}</p>
+                    <span *ngIf="row.immediatejoiner" class="badge badge-success">Immediate Joiner</span>
+                    <button
+                        (click)="applythejob(row.Technologies, row.CompanyName, row.CityName, row.Experience, row.immediatejoiner)"
+                        class="btn btn-primary btn-sm mt-2">Apply</button>
+                </div>
+            </div>
+        </div>

@@ -1,4 +1,4 @@
-
+<!-- 
   <div class="container-fluid mb-3" align="center">
     <h4 style="color: rgb(130, 66, 203);">Profile Details</h4>
 </div>
@@ -29,4 +29,20 @@
             <td>{{row.immediatejoiner|| row.immediatejoiner}}</td>
         </tr>
     </tbody>
-</table>
+</table> -->
+<div class="container-fluid mb-3 text-center">
+    <h4 class="text-primary">Profile Details</h4>
+</div>
+
+<div *ngFor="let row of applyJob" class="profile-card">
+    <div class="profile-card-content">
+        <h5 class="candidate-name">{{ row.CustomerName }}</h5>
+        <p><strong>Email:</strong> {{ row.email }}</p>
+        <p><strong>Company Name:</strong> {{ row.CompanyName }}</p>
+        <p><strong>Technologies:</strong> {{ row.Technologies }}</p>
+        <p><strong>Location:</strong> {{ row.CityName }}</p>
+        <p><strong>Experience:</strong> {{ row.Experience }} Yrs</p>
+        <p><strong>immediatejoiner:</strong> {{ row.immediatejoiner }}</p>
+        <!-- <span *ngIf="row.immediatejoiner" class="badge badge-success">Immediate Joiner</span> -->
+    </div>
+</div>

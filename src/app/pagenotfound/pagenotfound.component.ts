@@ -16,7 +16,7 @@ export class PagenotfoundComponent implements OnInit {
     let self=this;
     setTimeout(function(){
       self.router.navigateByUrl('/home')
-    },3000)
+    },8080)
   }
 
 

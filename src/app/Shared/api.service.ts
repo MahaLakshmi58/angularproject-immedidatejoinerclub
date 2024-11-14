@@ -12,7 +12,7 @@ export class ApiService {
   constructor(private http : HttpClient) { }
   postF(data : any)
   {
-    return this.http.post<any>("http://localhost:3000/posts",data)
+    return this.http.post<any>("https://json-server-2h1w.onrender.com/posts",data)
     .pipe(map((res:any)=>{
       return res;
     }))
@@ -20,7 +20,7 @@ export class ApiService {
   }
   postTechnologies(data : any)
   {
-    return this.http.post<any>("http://localhost:3000/posts1",data)
+    return this.http.post<any>("https://json-server-2h1w.onrender.com/posts1",data)
     .pipe(map((res:any)=>{
       return res;
     }))
@@ -28,7 +28,7 @@ export class ApiService {
   }
   getF()
   {
-    return this.http.get<any>("http://localhost:3000/posts")
+    return this.http.get<any>("https://json-server-2h1w.onrender.com/posts")
     .pipe(map((res:any)=>{
       return res;
     }))
@@ -36,7 +36,7 @@ export class ApiService {
   }
   getTechnologies()
   {
-    return this.http.get<any>("http://localhost:3000/posts1")
+    return this.http.get<any>("https://json-server-2h1w.onrender.com/posts1")
     .pipe(map((res:any)=>{
       return res;
     }))
@@ -44,7 +44,7 @@ export class ApiService {
   }
   deletecity(data : number)
   {
-    return this.http.delete<any>("http://localhost:3000/posts/"+data)
+    return this.http.delete<any>("https://json-server-2h1w.onrender.com/posts/"+data)
     .pipe(map((res:any)=>{
       return res;
     }))
@@ -52,7 +52,7 @@ export class ApiService {
   }
   deleteTechnologies(data : number)
   {
-    return this.http.delete<any>("http://localhost:3000/posts1/"+data)
+    return this.http.delete<any>("https://json-server-2h1w.onrender.com/posts1/"+data)
     .pipe(map((res:any)=>{
       return res;
     }))
@@ -60,21 +60,21 @@ export class ApiService {
   }
   updateCity(data:any,id:number)
   {
-    return this.http.put<any>("http://localhost:3000/posts/"+id,data)
+    return this.http.put<any>("https://json-server-2h1w.onrender.com/posts/"+id,data)
     .pipe(map((res:any)=>{
       return res;
     }))
   }
   updateTechnologies(data:any,id:number)
   {
-    return this.http.put<any>("http://localhost:3000/posts1/"+id,data)
+    return this.http.put<any>("https://json-server-2h1w.onrender.com/posts1/"+id,data)
     .pipe(map((res:any)=>{
       return res;
     }))
   }
   postapplythejobDetails(data : any)
   {
-    return this.http.post<any>("http://localhost:3000/applythejob",data)
+    return this.http.post<any>("https://json-server-2h1w.onrender.com/applythejob",data)
     .pipe(map((res:any)=>{
       return res;
     }))
@@ -82,7 +82,7 @@ export class ApiService {
   }
   postTechnologiesDetails(data : any)
   {
-    return this.http.post<any>("http://localhost:3000/applycompanies",data)
+    return this.http.post<any>("https://json-server-2h1w.onrender.com/applycompanies",data)
     .pipe(map((res:any)=>{
       return res;
     }))
@@ -90,7 +90,7 @@ export class ApiService {
   }
   postLogin(data : any)
   {
-    return this.http.post<any>("http://localhost:3000/login",data)
+    return this.http.post<any>("https://json-server-2h1w.onrender.com/login",data)
     .pipe(map((res:any)=>{
       return res;
   }))
@@ -99,34 +99,34 @@ export class ApiService {
 }
 getReg()
 {
-  return this.http.get<any>("http://localhost:3000/signupUsers")
+  return this.http.get<any>("https://json-server-2h1w.onrender.com/signupUsers")
     .pipe(map((res:any)=>{
       return res;
     }))
 }
 getLogin()
 {
-  return this.http.get<any>("http://localhost:3000/login")
+  return this.http.get<any>("https://json-server-2h1w.onrender.com/login")
     .pipe(map((res:any)=>{
       return res;
     }))
 }
 getapplyJob()
 {
-  return this.http.get<any>("http://localhost:3000/applythejob")
+  return this.http.get<any>("https://json-server-2h1w.onrender.com/applythejob")
     .pipe(map((res:any)=>{
       return res;
     }))
 }
 getapplycompanies()
 {
-  return this.http.get<any>("http://localhost:3000/applycompanies")
+  return this.http.get<any>("https://json-server-2h1w.onrender.com/applycompanies")
     .pipe(map((res:any)=>{
       return res;
     }))
 }
 getapplytheJob(){
-  return this.http.get<any>("http://localhost:3000/applythejob")
+  return this.http.get<any>("https://json-server-2h1w.onrender.com/applythejob")
   .pipe(map((res:any)=>{
     return res;
   }))
