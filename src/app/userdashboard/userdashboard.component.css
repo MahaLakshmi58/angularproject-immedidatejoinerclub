@@ -26,3 +26,40 @@
     border-radius: 12px;
     font-size: 0.8rem;
 }
+.header {
+    margin-bottom: 20px; /* Adds space below the header */
+    text-align: center;
+  }
+
+  /* Slider container styling */
+  #Slidhsow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px; /* Adds space above the slider container */
+  }
+
+  /* Main slider styling */
+  #main-slider {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between image items */
+    margin-top: 20px; /* Adds space above the main slider */
+  }
+
+  .slide {
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 20px; /* Adds space below each slide */
+  }
+
+  .images img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .text {
+    text-align: center;
+  }
