@@ -11,3 +11,68 @@ img {
   width: 100%;
   max-height: 100%;
 }
+.job-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.job-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.company-name, .location, .experience, .technologies {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+.badge-success {
+  display: inline-block;
+  color: #fff;
+  background-color: #28a745;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+.header {
+  margin-bottom: 20px; /* Adds space below the header */
+  text-align: center;
+}
+
+/* Slider container styling */
+#Slidhsow-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px; /* Adds space above the slider container */
+}
+
+/* Main slider styling */
+#main-slider {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds space between image items */
+  margin-top: 20px; /* Adds space above the main slider */
+}
+
+.slide {
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 20px; /* Adds space below each slide */
+}
+
+.images img {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+  margin: 0 auto;
+}
+
+.text {
+  text-align: center;
+}
